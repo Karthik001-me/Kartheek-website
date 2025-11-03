@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>RockPaperScissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1> Karthik RockPaperScissors <a class="helplink" href="#rules">Help</a></h1>
+  <h2 id="user"></h2>
+  <button onclick=" playgame('rock')" class="move-btn">
+    <img class="move-img" src="rock-emoji.png">
+  </button>
+  <button class="move-btn" onclick="playgame('paper')">
+    <img class="move-img" src="paper-emoji.png">
+  </button>
+  <button class="move-btn" onclick="playgame('scissors')">
+    <img class="move-img" src="scissors-emoji.png">
+  </button>
+  <p id="result" class="result"></p>
+  <p id="moves" class="moves"></p>
+  <p id="score" class="score"></p>
+    <button onclick="
+    Score.wins=0;
+    Score.losses=0;
+    Score.ties=0;
+    updateScore();
+     localStorage.removeItem('Score');
+    ">Reset Score</button>
+  <div class="rule-box" id="rules">
+    <h2>Rules of the Game</h2>
+    <img class="rule-img" src="/storage/emulated/0/Download/rock-paper-scissors-rules.jpg" width="200px">
+  </div>
+</body>
+<script src="script.js">
+   
+</script>
+</html>
