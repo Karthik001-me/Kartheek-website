@@ -50,7 +50,7 @@ function playgame(playerMove){
   localStorage.setItem('Score',JSON.stringify(Score));
   updateScore();
   
-  document.getElementById('moves').innerHTML=`${x} Choose <img class="move-img" src="/storage/emulated/0/Download/${playerMove}-emoji.png">  - <img class="move-img" src="/storage/emulated/0/Download/${computer}-emoji.png">  Computer`;
+  document.getElementById('moves').innerHTML=`${x} Choose <img class="move-img" src="${playerMove}-emoji.png">  - <img class="move-img" src="${computer}-emoji.png">  Computer`;
   }
  function updateScore(){
    document.getElementById('score').textContent=`Wins: ${Score.wins} Losses: ${Score.losses} Ties: ${Score.ties}`;
